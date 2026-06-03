@@ -1,1 +1,16 @@
-W
+{
+  "name": "malediket-ticket-bot",
+  "version": "1.0.0",
+  "description": "Bot Ticket Malédiké - Fully configurable",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
