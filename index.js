@@ -81,10 +81,10 @@ http.createServer((req, res) => {
   res.end('Bot Malédiké — alive ✅');
 }).listen(PORT, () => console.log(`[KeepAlive] HTTP sur le port ${PORT}`));
 
-// Self-ping silencieux toutes les 25 secondes (évite le sleep Render)
+// Self-ping silencieux toutes les 30 secondes (évite le sleep Render)
 setInterval(() => {
   http.get(`http://localhost:${PORT}`, () => {}).on('error', () => {});
-}, 25_000);
+}, 30_000);
 
 // Auto-reconnexion si le bot se déconnecte
 client.on('disconnect', () => {
